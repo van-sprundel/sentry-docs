@@ -235,6 +235,22 @@ Available via `Settings` -> `MCP Servers` -> `Manage MCP Servers` -> `Add MCP Se
 
 Configure via the `Configure MCP` option in Cascade (CMD + L)
 
+### Zed
+
+Add the following to your `settings.json`:
+
+```json
+{
+  "Sentry": {
+    "enabled": true,
+    "source": "custom",
+    "command": "npx",
+    "args": ["-y", "mcp-remote", "https://mcp.sentry.dev/mcp"],
+    "env": {}
+  }
+}
+```
+
 ### Other Clients
 
 The Sentry MCP Server follows standard MCP protocols and should work with any client that supports:
